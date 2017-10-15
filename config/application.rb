@@ -18,6 +18,8 @@ require 'action_controller/railtie'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+Dotenv::Railtie.load
+
 module RideTracker
   # :nodoc:
   class Application < Rails::Application
