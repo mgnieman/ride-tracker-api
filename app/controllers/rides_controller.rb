@@ -1,4 +1,4 @@
-class RidesController < ApplicationController
+class RidesController < ProtectedController
   before_action :set_ride, only: [:show, :update, :destroy]
 
   # GET /rides
