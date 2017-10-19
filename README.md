@@ -9,3 +9,4 @@ Changed repo name on GitHub
 - Scaffolded database `rides` with columns [date, distance, duration]
 - Tested using curl scripts, including adding to routes.rb and creating scripts/rides/create.sh, update.sh, delete.sh, index.sh & show.sh
 - Changed RidesController to inherit from ProtectedController
+- Add foreign key to Rides table: `bin/rails generate migration AddUserToRides user:references`
