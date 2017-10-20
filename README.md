@@ -10,3 +10,6 @@ Changed repo name on GitHub
 - Tested using curl scripts, including adding to routes.rb and creating scripts/rides/create.sh, update.sh, delete.sh, index.sh & show.sh
 - Changed RidesController to inherit from ProtectedController
 - Add foreign key to Rides table: `bin/rails generate migration AddUserToRides user:references` so that I could connect rides to users: one-user-to-many-rides.
+
+10.20
+- Added `--header "Authorization: Token token=$TOKEN" \` to all 5 scripts/rides files in order to require token for curl requests
