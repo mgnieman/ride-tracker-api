@@ -15,10 +15,10 @@ class RidesController < ProtectedController
 
   # POST /rides
   def create
-    @ride = Ride.new(ride_params)
+    @ride = current_user.rides.build(ride_params)
 
     if @ride.save
-      render json: @ride, status: :created, location: @ride
+      render json: @ride, status: :create, location: @ride
     else
       render json: @ride.errors, status: :unprocessable_entity
     end
@@ -42,7 +42,7 @@ class RidesController < ProtectedController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_ride
-    @ride = Ride.find(params[:id])
+    @ride = current_user.rides.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
