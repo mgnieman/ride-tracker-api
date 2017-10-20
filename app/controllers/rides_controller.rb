@@ -18,7 +18,7 @@ class RidesController < ProtectedController
     @ride = current_user.rides.build(ride_params)
 
     if @ride.save
-      render json: @ride, status: :create, location: @ride
+      render json: @ride, status: :created, location: @ride
     else
       render json: @ride.errors, status: :unprocessable_entity
     end
