@@ -13,3 +13,4 @@ Changed repo name on GitHub
 
 10.20
 - Added `--header "Authorization: Token token=$TOKEN" \` to all 5 scripts/rides files in order to require token for curl requests
+- Tested auth commands (sign up, sign in, etc.) with curl scripts
