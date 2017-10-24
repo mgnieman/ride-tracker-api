@@ -1,3 +1,17 @@
+This is the back-end repo
+
+Link to front-end repo: https://github.com/mgnieman/ride-tracker-client
+Deployed GitHub site: https://mgnieman.github.io/ride-tracker-client/
+Deployed Heroku site: https://ridetrackermn.herokuapp.com/
+
+What the app does and how it works:
+This app allows users to enter information from bicycle rides: date, distance & duration.  The information is stored in a database.  Users can add, update, edit & delete rides.
+
+Technologies Used: Ruby, Rails
+
+Link to ERD: https://imgur.com/a/IwYiH
+
+Development Story:
 10.14
 Initial setup
 
